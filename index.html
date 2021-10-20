@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>WalletJs</title>
+</head>
+<body>
+    <nav>
+        <h1>WalletJS</h1>
+        <a href="#perfil" class="perfil"></a>
+        <a href="#wallet" class="carteira"></a>
+        <a href="#login" class="sair">Logout</a>
+    </nav>
+    <div id="app">
+       <div id="login">
+            <div class="loginBox">
+                <h1>WalletJS</h1>
+            <label for="username" class="name">Username</label>
+                <input type="text" name="username" id="username" placeholder="Digite seu usuário...">
+            <label for="password" class="pass">Password</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha...">
+                <label for="mostrarpass" class="mostrar"><i class="fas fa-eye"></i></label>
+                <input type="checkbox" name="mostrarpass" id="mostrarpass">
+                <a href="#wallet" class="entrar">Entrar</a>
+                <a href="#cadastro" class="cadastro">Ainda não tem uma conta? Cadastre-se</a>
+            </div>
+        </div>
+        <div id="cadastro">
+            <form action="">
+                <h2>Bem vindo, cadastre-se aqui!</h2>
+                    <h4>Nome:<input type="text" name="namec" id="namec"></h4>
+                    <h4>Idade:<input type="number" name="idade" id="idade"></h4>
+                    <h4>Sexo: <label for="masc">Masculino</label><input type="checkbox" name="masc" id="masc">
+                    <label for="fem">Feminino</label><input type="checkbox" name="fem" id="fem"></h4>
+                    <h4>Usuário:<input type="text" name="user" id="user"></h4>
+                    <h4>Senha:<input type="password" name="pass" id="pass"></h4>
+                    <h4>Confirmar senha:<input type="password" name="cpass" id="cpass"></h4>
+                    <h4>Email:<input type="text" name="email" id="email"></h4>
+                    <h4>Confirme seu Email:<input type="text" name="compemail" id="compemail"></h4>
+                <a href="#login" class="registrar">Registrar</a>
+            </form>
+        </div>  
+        <div id="wallet">
+            <div class="display">
+            </div>
+            <div class="valores">
+            </div>
+            <div class="dados">
+            </div>
+        </div>
+        <div id="perfil">
+            <div class="info">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

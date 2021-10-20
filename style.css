@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+nav {
+   /* width: 2.5rem; */
+    width: 8rem;
+    height: 41.1rem;
+    position: fixed;
+    border-right: 0.5rem solid #000;
+    border-radius: 0.5rem;
+    z-index: 2;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
+}
+
+nav:hover {
+    width: 8rem;
+}
+
+nav h1 {
+    width: 9.5rem;
+    height: 5rem;
+    font-size: 20pt ;
+    position: absolute;
+    top: 16rem;
+    left: -1.7rem;
+    transform:rotate(-90deg);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a {
+    border-radius: 0.8rem;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 4.5rem;
+    text-decoration: none;
+}
+
+nav a.perfil {
+    top: 20rem;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a.carteira {
+    top: 13rem;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a.sair {
+    width: 4rem;
+    height: 1.5rem;
+    top: 35rem;
+    left: 2.5rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: #000;
+}
+
+div#app {
+    width: 100vw;
+    height: 199vh;
+    position: absolute;
+    background-image:url(https://c1.wallpaperflare.com/preview/915/682/501/credit-card-cash-money-wallet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
+}
+
+div#app div#login,
+div#app div#cadastro,
+div#app div#wallet,
+div#app div#perfil {
+    height: 99.5vh;
+    position: relative;
+    background-color: #fff transparent;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#login div.loginBox {
+    width: 20.5rem;
+    height: 26rem;
+    border: 0.1rem solid #000000;
+    box-shadow: 1.5rem 1rem 1rem #000000;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#login div.loginBox h1 {
+    color: #000000;
+    position: relative;
+    bottom: 10rem;
+}
+
+div#login div.loginBox label {
+    font-size: 12pt;
+    font-weight: bolder;
+    color: #000000;
+    position: absolute;
+}
+
+label.name {
+    top: 15.7rem;
+    right: 41rem;
+}
+
+label.pass {
+    top: 19.7rem;
+    right: 41rem;
+}
+
+label.mostrar {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    padding-top: 0.2rem;
+    border-radius: 0.8rem;
+    top: 21.1rem;
+    right: 34rem;
+}
+
+label.mostrar i {
+    color: #000;
+}
+
+div#login div.loginBox input {
+    height: 1.5rem;
+    width: 12.5rem;
+    padding-left: 0.5rem;
+    border-radius: 0.8rem;
+    position: absolute;
+    right: 36rem;
+}
+
+div#login div.loginBox input:focus {
+    background-color: #92816f;
+}
+
+input#mostrarpass {
+    width: 0.9rem;
+    position: absolute;
+    right: 34.5rem;
+    top: 21.1rem;
+    visibility: hidden;
+}
+
+input#username {
+    top: 17rem;
+}
+
+input#password {
+    top: 21rem;
+}
+
+div#login div.loginBox a {
+    color:#000000;
+    position: absolute;
+    text-decoration: none;
+}
+
+a.entrar {
+    width: 9.5rem;
+    height:1rem;
+    padding: 0.5rem;
+    font-size: 12pt;
+    border-radius:1rem;
+    background-color: #92816f;
+    position: relative;
+    top: 25rem;
+    text-align: center;
+}
+
+a.cadastro {
+    top: 28rem;
+}
+
+div#app div#cadastro form {
+    width: 30rem;
+    height: 35rem;
+    border: 0.1rem solid #000;
+}
+
+form h2 {
+    margin-top: 1rem; 
+    position: absolute;
+    left: 35rem;
+}
+form h4 {
+    position: relative;
+    top: 3rem;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=number] {
+    width: 24.5rem;
+    height: 1.2rem;
+    padding-left: 0.5rem;
+    border-radius: 0.4rem;
+    position: relative;
+    left: 1rem;
+}
+
+form h4 label:first-of-type {
+    font-size: 12pt;
+    position: relative;
+    left: 1.5rem;
+}
+
+form h4 label {
+    font-size: 12pt;
+    position: relative;
+    left: 7.5rem;
+}
+
+form input[type=checkbox] {
+    width: 1rem;
+    position: absolute;
+}
+
+form input#masc {
+    left:10rem;
+}
+
+form input#fem {
+    left:20rem;
+}
+
+form a {
+    width: 4.5rem;
+    height: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #92816f;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5rem;
+    left: 40rem;
+    color: #000000;
+    text-align: center;
+}
+
+div#wallet div.display {
+    width: 46rem;
+    height: 20rem;
+    position: relative;
+    bottom: 10rem;
+    left: 4.2rem;
+    border: 0.1rem solid #000;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#wallet div.valores {
+    width: 30rem;
+    height: 40rem;
+    border: 0.1rem solid #000;
+    position: relative;
+    left: 4.3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#wallet div.dados {
+    width: 46rem;
+    height: 20rem;
+    position: relative;
+    bottom: 20.1rem;
+    right: 10.9rem;
+    border: 0.1rem solid #000;
+    display: flex;
+    flex-wrap: wrap;
+}
