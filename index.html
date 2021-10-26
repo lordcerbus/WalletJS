@@ -11,36 +11,41 @@
 <body>
     <nav>
         <h1>WalletJS</h1>
-        <a href="#perfil" class="perfil"></a>
-        <a href="#wallet" class="carteira"></a>
-        <a href="#login" class="sair">Logout</a>
+        <div class="fotoPerfil"><i class="fas fa-user fa-8x"></i></div>
+        <p>ID:########</p>
+        <p>Conta:######-###</p>
+        <p>Cap.Inves:R$####,##</p>
+        <p>R/A:R$####,##</p>
+        <p>Saldo:+-R$####,##</p>
+        <a href="#login" class="sair">Sair</a>
     </nav>
     <div id="app">
        <div id="login">
             <div class="loginBox">
                 <h1>WalletJS</h1>
-            <label for="username" class="name">Username</label>
+            <label for="username" class="name">Usuário</label>
                 <input type="text" name="username" id="username" placeholder="Digite seu usuário...">
-            <label for="password" class="pass">Password</label>
+            <label for="password" class="pass">Senha</label>
                 <input type="password" name="password" id="password" placeholder="Digite sua senha...">
                 <label for="mostrarpass" class="mostrar"><i class="fas fa-eye"></i></label>
                 <input type="checkbox" name="mostrarpass" id="mostrarpass">
                 <a href="#wallet" class="entrar">Entrar</a>
+                <a href="" class="esqueci">Esqueci minha senha</a>
                 <a href="#cadastro" class="cadastro">Ainda não tem uma conta? Cadastre-se</a>
             </div>
         </div>
         <div id="cadastro">
             <form action="">
                 <h2>Bem vindo, cadastre-se aqui!</h2>
-                    <h4>Nome:<input type="text" name="namec" id="namec"></h4>
-                    <h4>Idade:<input type="number" name="idade" id="idade"></h4>
-                    <h4>Sexo: <label for="masc">Masculino</label><input type="checkbox" name="masc" id="masc">
-                    <label for="fem">Feminino</label><input type="checkbox" name="fem" id="fem"></h4>
-                    <h4>Usuário:<input type="text" name="user" id="user"></h4>
-                    <h4>Senha:<input type="password" name="pass" id="pass"></h4>
-                    <h4>Confirmar senha:<input type="password" name="cpass" id="cpass"></h4>
-                    <h4>Email:<input type="text" name="email" id="email"></h4>
-                    <h4>Confirme seu Email:<input type="text" name="compemail" id="compemail"></h4>
+                    <h4>Nome Completo:</h4><input type="text" name="namec" id="namec">
+                    <h4>Sexo:</h4><label for="masc">Masculino</label><input type="radio" name="masc" id="masc" checked>
+                        <label for="fem">Feminino</label><input type="radio" name="fem" id="fem">
+                    <h4>Idade:</h4><input type="date" name="idade" id="idade">
+                    <h4>Usuário:</h4><input type="text" name="user" id="user">
+                    <h4>Senha:</h4><input type="password" name="pass" id="pass">
+                    <h4>Confirmar senha:</h4><input type="password" name="cpass" id="cpass">
+                    <h4>Email:</h4><input type="text" name="email" id="email">
+                    <h4>Confirme seu Email:</h4><input type="text" name="compemail" id="compemail">
                 <a href="#login" class="registrar">Registrar</a>
             </form>
         </div>  
@@ -50,10 +55,6 @@
             <div class="valores">
             </div>
             <div class="dados">
-            </div>
-        </div>
-        <div id="perfil">
-            <div class="info">
             </div>
         </div>
     </div>
